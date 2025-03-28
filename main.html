@@ -15,15 +15,16 @@
         h1, h2 {
             text-align: center;
         }
-        .playlist-container, .player-container {
-            background-color: white;
-            padding: 15px;
-            border-radius: 10px;
-            width: 50%;
-            text-align: center;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
-        }
+       .player_one, .player_two {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
         ul {
             padding: 0;
             text-align: left;
@@ -54,9 +55,8 @@
             <li><a href="#" target="_blank">Song 5</a></li>
         </ul>
     </div>
-    
-    <h2>Now Playing...</h2>
-    <div class="player-container">
+      <h2>Now Playing...</h2>
+    <div class="player_one">
         <video controls>
             <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -64,12 +64,12 @@
     </div>
     
     <h2>MP3 songs</h2>
-    <div class="player-container">
+    <div class="player_two">
         <p>Maan Meri Jaan</p>
         <audio controls>
             <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
             Your browser does not support the audio tag.
         </audio>
-    </div>
+  </div>
 </body>
 </html>
