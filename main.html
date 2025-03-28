@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Playlist</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: rgb(204, 204, 204);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .playlist-container, .player-container {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 50%;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        ul {
+            padding: 0;
+            text-align: left;
+        }
+        li {
+            list-style-type: none;
+            padding: 5px 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        video, audio {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>My Playlist</h1>
-    <h2>Now Playing...</h2>
-    <h2>MP3 Songs</h2>
-
-    <div>
+    <div class="playlist-container">
         <ul>
             <li><a href="#" target="_blank">Song 1</a></li>
             <li><a href="#" target="_blank">Song 2</a></li>
@@ -20,21 +54,22 @@
             <li><a href="#" target="_blank">Song 5</a></li>
         </ul>
     </div>
-
-    <div class="player_one">
+    
+    <h2>Now Playing...</h2>
+    <div class="player-container">
         <video controls>
             <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-
-    <div class="player_two">
+    
+    <h2>MP3 songs</h2>
+    <div class="player-container">
+        <p>Maan Meri Jaan</p>
         <audio controls>
             <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
             Your browser does not support the audio tag.
         </audio>
     </div>
-
-    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
